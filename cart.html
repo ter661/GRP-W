@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decor Haven - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Decor Haven</h1>
+        <nav>
+            <a href="product.html">Products</a> |
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Shopping Cart</h2>
+
+        <!-- CART TABLE -->
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Sub-Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <!-- displayCart() will load items here -->
+            </tbody>
+        </table>
+
+        <!-- SUMMARY SECTION -->
+        <section id="cartSummary" style="margin-top: 20px;">
+            <!-- displayCart() will fill this -->
+        </section>
+
+        <!-- REQUIRED BUTTONS -->
+        <div style="margin-top: 20px;">
+            <button onclick="clearAllCart()">Clear All</button>
+            <button onclick="goToCheckout()">Check Out</button>
+            <button onclick="closeCart()">Close</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

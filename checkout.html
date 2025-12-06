@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decor Haven - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Decor Haven</h1>
+        <nav>
+            <a href="cart.html">Back to Cart</a> |
+            <a href="product.html">Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Checkout</h2>
+
+        <!-- CART SUMMARY -->
+        <section>
+            <h3>Order Summary</h3>
+            <div id="checkoutSummary">
+                <!-- displayCheckoutSummary() will fill this -->
+            </div>
+        </section>
+
+        <!-- SHIPPING DETAILS -->
+        <section style="margin-top: 20px;">
+            <h3>Shipping Details</h3>
+
+            <label>
+                Name:<br>
+                <input type="text" id="shipName" required>
+            </label>
+            <br><br>
+
+            <label>
+                Address:<br>
+                <textarea id="shipAddress" rows="3" required></textarea>
+            </label>
+            <br><br>
+
+            <label>
+                Amount Being Paid ($):<br>
+                <input type="number" id="amountPaid" step="0.01" required>
+            </label>
+        </section>
+
+        <!-- BUTTONS -->
+        <div style="margin-top: 20px;">
+            <button onclick="confirmCheckout()">Confirm</button>
+            <button onclick="cancelCheckout()">Cancel</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
