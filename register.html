@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decor Haven - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Create an Account</h1>
+
+    <form id="registerForm" onsubmit="event.preventDefault(); registerUser();">
+        <label>First Name:<br>
+            <input type="text" id="fname" required>
+        </label><br><br>
+
+        <label>Last Name:<br>
+            <input type="text" id="lname" required>
+        </label><br><br>
+
+        <label>Date of Birth:<br>
+            <input type="date" id="dob" required>
+        </label><br><br>
+
+        <p>Gender:<br>
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+        </p>
+
+        <label>Phone:<br>
+            <input type="text" id="phone" required>
+        </label><br><br>
+
+        <label>Email:<br>
+            <input type="email" id="email" required>
+        </label><br><br>
+
+        <label>TRN:<br>
+            <input type="text" id="trn" placeholder="000-000-000" required>
+        </label><br><br>
+
+        <label>Password:<br>
+            <input type="password" id="password" required>
+        </label><br><br>
+
+        <button type="submit">Register</button>
+        <button type="button" onclick="clearRegistrationForm()">Cancel</button>
+    </form>
+
+    <p>Already have an account? <a href="index.html">Login here</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
