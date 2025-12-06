@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decor Haven - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="product.html">Products</a> |
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>User Frequency</h2>
+            <div id="genderChart">
+                </div>
+            <br>
+            <div id="ageChart">
+                </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>All Invoices</h2>
+            <label>Search by TRN:
+                <input type="text" id="searchTrn" placeholder="000-000-000">
+            </label>
+            <button onclick="ShowInvoices()">Search/Show All</button>
+
+            <div id="invoiceList">
+                </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>User Invoice Lookup (from User Data)</h2>
+            <label>Enter TRN:
+                <input type="text" id="userTrnInvoices">
+            </label>
+            <button onclick="GetUserInvoices()">Search</button>
+
+            <div id="userInvoiceList">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
